@@ -30,7 +30,7 @@ main {
 
 section {
     width: 1000px;
-    display: inline;
+    display: block;
     margin: 0 auto;
     padding: 30px 0;
 }
@@ -61,20 +61,26 @@ section > ul > li > p {
 
 @media screen and (max-width: 640px){
     section {
-        flex:33%;
+        display: flex;
         max-width: 100%;
         flex-direction: column;
     }
 
     section > ul > li {
+        display: flex;
         width: 33%;
-        column-count: 3 !important;   
+        column-count: 3 !important;  
+        column-width: 30%;
     }
-    section > ul > li > p {
+    section > ul > li > p {  
         padding-left: 5px;
         padding-top: 5px;
         font-size: 14px;
         margin: 0;
+    }
+
+    section > ul > li > img {
+        margin-bottom: 15px;
     }
 }
 
