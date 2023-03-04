@@ -16,6 +16,7 @@ ul:after,
 	clear: both;
 }
 body {
+    font-family: Arial, Helvetica, sans-serif;
     display: block;
     width: 100%;
 }
@@ -49,6 +50,7 @@ section > ul > li {
 section > ul > li > img {
     width: 100%;
     display: block;
+    margin-bottom: 3px;
 }
 
 section > ul > li > p {
@@ -57,5 +59,22 @@ section > ul > li > p {
 	font-size: 14px;
 }
 
+@media screen and (max-width: 640px){
+    section {
+        flex:33%;
+        max-width: 100%;
+        flex-direction: column;
+    }
 
+    section > ul > li {
+        width: 33%;
+        column-count: 3 !important;   
+    }
+    section > ul > li > p {
+        padding-left: 5px;
+        padding-top: 5px;
+        font-size: 14px;
+        margin: 0;
+    }
+}
 
