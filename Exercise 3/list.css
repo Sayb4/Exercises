@@ -9,13 +9,8 @@ li  {
     list-style-type: none;
 }
 
-ul:after,
-.clearfix:after {
-	content: "";
-	display: block;
-	clear: both;
-}
 body {
+    font-family: Arial, Helvetica, sans-serif;
     display: block;
     width: 100%;
 }
@@ -27,18 +22,34 @@ main {
     padding: 0 3px;
 }
 
+section > ul > li > div {
+    align-items: center;
+    text-align: center;
+    width: 18vw;
+    margin: 10px;
+}
+
+section > ul > li > div > img {
+    width: 100%;
+}
+
 section {
     width: 1000px;
-    display: inline;
+    display: block;
     margin: 0 auto;
     padding: 30px 0;
 }
 
-section > ul {
-	width: 100%;
-	display: flex;
-	flex-flow: row wrap;
+section>ul {
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
+
 
 section > ul > li {
     width: 19%;
@@ -49,6 +60,8 @@ section > ul > li {
 section > ul > li > img {
     width: 100%;
     display: block;
+    margin-bottom: 3px;
+    ;
 }
 
 section > ul > li > p {
@@ -57,5 +70,39 @@ section > ul > li > p {
 	font-size: 14px;
 }
 
+@media screen and (max-width: 640px){
+    section {
+        display: flex;
+        max-width: 100%;
+        flex-direction: column;
+    }
 
+    section>ul>li {
+        display: flex;
+        width: 33%;
+        column-count: 3 !important;
+        column-width: 30%;
+    }
+    section > ul > li > p {  
+        padding-left: 5px;
+        padding-top: 5px;
+        font-size: 14px;
+        margin: 0;
+    }
+
+    section > ul > li > img {
+        margin-bottom: 15px;
+        size: 250px;
+    }
+
+    section > ul > li > div {
+        align-items: center;
+        text-align: center;
+        width: 33vw;
+    }
+
+    section > ul > li > div > img {
+        width: 100%;
+    }
+}
 
