@@ -3,32 +3,26 @@
     margin: 0 ;
 }
 
-/* 67th GAKUTEN SPECIAL PRIZE */
+body{
+    width: 100%;
+}
 
-position: absolute;
-width: 352px;
-height: 29.23px;
+main{
+    position: absolute;
+    display: flex;
+    height: fit-content;
+    width: 500px;
+    margin: 0 auto;
+}
 
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 29px;
+header{
+    color: #D4C79A;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 33px;
+}
 
-color: #D4C79A;
-/* EXHIBITION in PARIS */
-
-position: absolute;
-width: 322px;
-height: 40.32px;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 33px;
-line-height: 40px;
-
-color: #D4C79A;
-
-
-
+img {
+    height: 300px;
+}
